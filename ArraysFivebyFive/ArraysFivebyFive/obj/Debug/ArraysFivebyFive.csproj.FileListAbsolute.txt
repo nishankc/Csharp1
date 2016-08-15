@@ -1,0 +1,6 @@
+C:\Users\student\Nishank\GitHub\Csharp1\ArraysFivebyFive\ArraysFivebyFive\bin\Debug\ArraysFivebyFive.exe.config
+C:\Users\student\Nishank\GitHub\Csharp1\ArraysFivebyFive\ArraysFivebyFive\bin\Debug\ArraysFivebyFive.exe
+C:\Users\student\Nishank\GitHub\Csharp1\ArraysFivebyFive\ArraysFivebyFive\bin\Debug\ArraysFivebyFive.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\ArraysFivebyFive\ArraysFivebyFive\obj\Debug\ArraysFivebyFive.csprojResolveAssemblyReference.cache
+C:\Users\student\Nishank\GitHub\Csharp1\ArraysFivebyFive\ArraysFivebyFive\obj\Debug\ArraysFivebyFive.exe
+C:\Users\student\Nishank\GitHub\Csharp1\ArraysFivebyFive\ArraysFivebyFive\obj\Debug\ArraysFivebyFive.pdb

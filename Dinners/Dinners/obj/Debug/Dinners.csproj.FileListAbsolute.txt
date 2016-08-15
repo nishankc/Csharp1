@@ -1,0 +1,5 @@
+C:\Users\student\Nishank\GitHub\Csharp1\Dinners\Dinners\bin\Debug\Dinners.exe.config
+C:\Users\student\Nishank\GitHub\Csharp1\Dinners\Dinners\bin\Debug\Dinners.exe
+C:\Users\student\Nishank\GitHub\Csharp1\Dinners\Dinners\bin\Debug\Dinners.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\Dinners\Dinners\obj\Debug\Dinners.exe
+C:\Users\student\Nishank\GitHub\Csharp1\Dinners\Dinners\obj\Debug\Dinners.pdb
