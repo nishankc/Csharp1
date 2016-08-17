@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace CarDealership
 {
     class Vehicle { 
-        public string make;
-        public string model;
-        public int price;
+        private string make;
+        private string model;
+        private int price;
         public bool sold;
         public int mileage;
         public int yearsOld;

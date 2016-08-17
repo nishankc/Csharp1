@@ -54,7 +54,7 @@ namespace CarDealership
         public void SellCar(bool sold, int price)
         {
             this.sold = sold;
-            this.price = price;
+            this.Price = price;
         }
 
 
@@ -76,7 +76,7 @@ namespace CarDealership
                         autoOrManual = "Manual";
                     }
 
-                    Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price + "\nType: " + autoOrManual);
+                    Console.WriteLine("Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nType: " + autoOrManual);
                     Console.WriteLine("----------------------");
                 }
                 
@@ -107,7 +107,7 @@ namespace CarDealership
                         autoOrManual = "Manual";
                     }
 
-                    Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price + "\nType: " + autoOrManual);
+                    Console.WriteLine("Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nType: " + autoOrManual);
                     Console.WriteLine("----------------------");
                 }
                 else
@@ -128,7 +128,7 @@ namespace CarDealership
             {
                 if(car.sold != true)
                 {
-                    totalCost += car.price;
+                    totalCost += car.Price;
                 }
             }
 
@@ -141,7 +141,7 @@ namespace CarDealership
             {
                 if (car.sold != true && car.mileage != 0 && car.yearsOld != 0)
                 {
-                    Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price + "\nMileage: " + car.mileage + "\nThe car is {0} years old",car.yearsOld);
+                    Console.WriteLine("Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nMileage: " + car.mileage + "\nThe car is {0} years old",car.yearsOld);
                 }
                 
 

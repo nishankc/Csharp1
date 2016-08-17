@@ -57,7 +57,7 @@ namespace CarDealership
         public void SellBike(bool sold, int price)
         {
             this.sold = sold;
-            this.price = price;
+            this.Price = price;
         }
 
         public static void ListSoldBikes(List<Motorcycle> motorcycles)
@@ -72,7 +72,7 @@ namespace CarDealership
                 {
 
 
-                    Console.WriteLine("Make: " + bike.make + "\nModel: " + bike.model + "\nPrice: " + bike.price + "\nWeight: " + bike.weight + "Kg\nMax Speed: " + bike.maxSpeed + "MPH");
+                    Console.WriteLine("Make: " + bike.Make + "\nModel: " + bike.Model + "\nPrice: " + bike.Price + "\nWeight: " + bike.weight + "Kg\nMax Speed: " + bike.maxSpeed + "MPH");
                     Console.WriteLine("----------------------");
                 }
                 
@@ -92,7 +92,7 @@ namespace CarDealership
                 {
                     
 
-                    Console.WriteLine("Make: " + bike.make + "\nModel: " + bike.model + "\nPrice: " + bike.price + "\nWeight: " + bike.weight + "Kg\nMax Speed: " + bike.maxSpeed + "MPH");
+                    Console.WriteLine("Make: " + bike.Make + "\nModel: " + bike.Model + "\nPrice: " + bike.Price + "\nWeight: " + bike.weight + "Kg\nMax Speed: " + bike.maxSpeed + "MPH");
                     Console.WriteLine("----------------------");
                 }
                 else
@@ -113,7 +113,7 @@ namespace CarDealership
             {
                 if (bike.sold != true)
                 {
-                    totalCost += bike.price;
+                    totalCost += bike.Price;
                 }
             }
 
@@ -126,7 +126,7 @@ namespace CarDealership
             {
                 if (bike.sold != true && bike.mileage != 0 && bike.yearsOld != 0)
                 {
-                    Console.WriteLine("Make: " + bike.make + "\nModel: " + bike.model + "\nPrice: " + bike.price + "\nWeight: " + bike.weight + "Kg\nMax Speed: " + bike.maxSpeed + "MPH\nMileage: " + bike.mileage + "\nThe car is {0} years old", bike.yearsOld);
+                    Console.WriteLine("Make: " + bike.Make + "\nModel: " + bike.Model + "\nPrice: " + bike.Price + "\nWeight: " + bike.weight + "Kg\nMax Speed: " + bike.maxSpeed + "MPH\nMileage: " + bike.mileage + "\nThe car is {0} years old", bike.yearsOld);
                 }
 
 

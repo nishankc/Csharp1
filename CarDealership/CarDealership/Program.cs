@@ -127,7 +127,7 @@ namespace CarDealership
                         string searchedCar = Console.ReadLine();
                         Console.WriteLine("Enter price the car sold for: ");
                         int sellPrice = Int32.Parse(Console.ReadLine());
-                        Car result = cars.Find(x => x.model == searchedCar);
+                        Car result = cars.Find(x => x.Model == searchedCar);
 
                         result.SellCar(true, sellPrice);
                         
@@ -139,7 +139,7 @@ namespace CarDealership
                         string searchedBike = Console.ReadLine();
                         Console.WriteLine("Enter price the motorcycle sold for: ");
                         int sellBikePrice = Int32.Parse(Console.ReadLine());
-                        Motorcycle resultBike = bikes.Find(x => x.model == searchedBike);
+                        Motorcycle resultBike = bikes.Find(x => x.Model == searchedBike);
 
                         resultBike.SellBike(true, sellBikePrice);
                         break;
