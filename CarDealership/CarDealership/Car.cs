@@ -6,38 +6,37 @@ using System.Threading.Tasks;
 
 namespace CarDealership
 {
-    class Car
+    class Car : Vehicle
     {
-        private string make;
-        private string model;
-        private int price;
-        private bool sold;
-        private int mileage;
-        private int yearsOld;
+        private string type;
+        private bool manual;
         
         public static int totalCars;
 
 
 
+        
 
-
-        public Car(string make, string model, int price)
+        public Car(string make, string model, int price, bool manual) : base (make, model, price)
         {
 
-            this.make = make;
-            this.model = model;
-            this.price = price;
+            this.type = "Car";
+            //this.make = make;
+            //this.model = model;
+            //this.price = price;
+            this.manual = manual;
             this.sold = false;
             totalCars++;
 
         }
 
-        public Car(string make, string model, int price, int mileage, int yearsOld)
+        public Car(string make, string model, int price,bool manual, int mileage, int yearsOld) : base(make, model, price, mileage, yearsOld)
         {
-
-            this.make = make;
-            this.model = model;
-            this.price = price;
+            this.type = "Car";
+            //this.make = make;
+            //this.model = model;
+            //this.price = price;
+            this.manual = manual;
             this.sold = false;
             this.mileage = mileage;
             this.yearsOld = yearsOld;
@@ -45,54 +44,12 @@ namespace CarDealership
 
         }
 
-
-        public string Make
+        public override void Display()
         {
-            get { return make; }
-            set { make = value; }
+
+
+            Console.WriteLine("Make: " + Make + "\nModel: " + Model + "\nPrice: " + Price + "\nType" + manual);
         }
-
-        public string Model
-        {
-            get { return model; }
-            set { model = value; }
-        }
-
-        public int Price
-        {
-            get { return price; }
-            set { price = value; }
-        }
-
-        
-        public bool Sold
-        {
-            get { return sold; }
-            set { sold = value; }
-        }
-
-        public int Mileage
-        {
-            get { return mileage; }
-            set { mileage = value; }
-        }
-
-        public int YearsOld
-        {
-            get { return yearsOld; }
-            set { yearsOld = value; }
-        }
-
-        public string DisplayCar()
-        {
-            return "Make: " + Make + "\nModel: " + Model + "\nPrice: " + Price;
-        }
-
-       
-
-        
-
-        
 
         public void SellCar(bool sold, int price)
         {
@@ -100,15 +57,57 @@ namespace CarDealership
             this.price = price;
         }
 
+
+        public static void ListSoldCars(List<Car> cars)
+        {
+            string autoOrManual = "";
+
+            foreach (var car in cars)
+            {
+
+                if (car.sold == true)
+                {
+                    if (car.manual != true)
+                    {
+                        autoOrManual = "Automatic";
+                    }
+                    else
+                    {
+                        autoOrManual = "Manual";
+                    }
+
+                    Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price + "\nType: " + autoOrManual);
+                    Console.WriteLine("----------------------");
+                }
+                
+
+                
+            }
+        }
+
         public static void ListCars(List<Car> cars)
         {
             int totalCar = totalCars;
+            string autoOrManual = "";
+
+            
+
+
+
             foreach (var car in cars)
             {
                 
                 if (car.sold != true)
                 {
-                    Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price);
+                    if(car.manual != true)
+                    {
+                        autoOrManual = "Automatic";
+                    }else
+                    {
+                        autoOrManual = "Manual";
+                    }
+
+                    Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price + "\nType: " + autoOrManual);
                     Console.WriteLine("----------------------");
                 }
                 else
@@ -133,7 +132,7 @@ namespace CarDealership
                 }
             }
 
-            Console.WriteLine("Total Value of Stock: {0}",totalCost);
+            Console.WriteLine("Total Value of Stock for cars: {0}",totalCost);
         }
 
         public static void ListCarDetails(List<Car> cars)
@@ -144,10 +143,7 @@ namespace CarDealership
                 {
                     Console.WriteLine("Make: " + car.make + "\nModel: " + car.model + "\nPrice: " + car.price + "\nMileage: " + car.mileage + "\nThe car is {0} years old",car.yearsOld);
                 }
-                else
-                {
-                    //totalCars--;
-                }
+                
 
             }
         }
