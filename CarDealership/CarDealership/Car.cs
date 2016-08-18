@@ -76,8 +76,11 @@ namespace CarDealership
                         autoOrManual = "Manual";
                     }
 
-                    Console.WriteLine("Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nType: " + autoOrManual);
-                    Console.WriteLine("----------------------");
+                    //Console.WriteLine("Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nType: " + autoOrManual);
+                    //Console.WriteLine("----------------------");
+
+                    MainMenu newMenu = new MainMenu();
+                    newMenu.Text = "Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nType: " + autoOrManual;
                 }
                 
 
@@ -109,6 +112,8 @@ namespace CarDealership
 
                     Console.WriteLine("Make: " + car.Make + "\nModel: " + car.Model + "\nPrice: " + car.Price + "\nType: " + autoOrManual);
                     Console.WriteLine("----------------------");
+
+                    
                 }
                 else
                 {

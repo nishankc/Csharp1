@@ -1,0 +1,10 @@
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\bin\Debug\Demo3.exe.config
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\bin\Debug\Demo3.exe
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\bin\Debug\Demo3.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.csprojResolveAssemblyReference.cache
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.Form1.resources
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.Properties.Resources.resources
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.csproj.GenerateResource.Cache
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.exe
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\Demo3\Demo3\obj\Debug\Demo3.Form2.resources

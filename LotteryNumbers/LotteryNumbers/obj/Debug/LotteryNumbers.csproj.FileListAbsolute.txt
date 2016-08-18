@@ -1,0 +1,8 @@
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\bin\Debug\LotteryNumbers.exe.config
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\bin\Debug\LotteryNumbers.exe
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\bin\Debug\LotteryNumbers.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\obj\Debug\LotteryNumbers.Form1.resources
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\obj\Debug\LotteryNumbers.Properties.Resources.resources
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\obj\Debug\LotteryNumbers.csproj.GenerateResource.Cache
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\obj\Debug\LotteryNumbers.exe
+C:\Users\student\Nishank\GitHub\Csharp1\LotteryNumbers\LotteryNumbers\obj\Debug\LotteryNumbers.pdb
