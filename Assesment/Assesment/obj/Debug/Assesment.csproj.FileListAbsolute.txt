@@ -1,0 +1,8 @@
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\bin\Debug\Assesment.exe.config
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\bin\Debug\Assesment.exe
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\bin\Debug\Assesment.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\obj\Debug\Assesment.csprojResolveAssemblyReference.cache
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\obj\Debug\Assesment.exe
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\obj\Debug\Assesment.pdb
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\obj\Debug\Assesment.Form1.resources
+C:\Users\student\Nishank\GitHub\Csharp1\Assesment\Assesment\obj\Debug\Assesment.csproj.GenerateResource.Cache
