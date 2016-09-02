@@ -1,0 +1,21 @@
+﻿@using MVCRecords.Models
+@model IEnumerable<Album>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>My Record Libary</h2>
+
+<ul>
+    @foreach(Album r in Model)
+    {
+        <li>@r.title</li>
+        <li>@r.artist</li>
+        <li>@r.format</li>
+        <li>@r.price</li>
+        <br />
+    }
+
+</ul>
+

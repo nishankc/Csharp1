@@ -1,0 +1,37 @@
+﻿@model PartyInvite.Models.GuestResponse
+
+@{
+    ViewBag.Title = "Thanks";
+}
+
+@{ 
+    try {
+        WebMail.SmtpServer = "smtp.google.com";
+        WebMail.SmtpPort = 587;
+        WebMail.EnableSsl = true;
+        WebMail.UserName = "brookemeadbills@gmail.com";
+        WebMail.Password = "N15h0809";
+        WebMail.From = "rsvp@example.com";
+
+        WebMail.Send("brookemeadbills@gmail.com", "RSVP Notification", Model.Name + " is " + ((Model.WillAttend ?? false) ? "" : "not") + " attending");
+    }
+    catch(Exception)
+    {
+        <b>Sorry - we could not send the email confirmation, please try again later</b>
+    }
+}
+
+<div class="text-center">
+
+    <h2>Thanks, @Model.Name</h2>
+
+    @if (Model.WillAttend == true)
+    {
+        @:It is great you are coming with a drink, you are not cheap, congrats!!!
+    }
+    else
+    {
+        @:Sorry to hear you are too cheap to buy drinks :), now I know not to send this to you ever again
+    }
+
+</div>

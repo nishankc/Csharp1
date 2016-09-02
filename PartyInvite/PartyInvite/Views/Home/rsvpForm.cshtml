@@ -1,0 +1,48 @@
+﻿@model PartyInvite.Models.GuestResponse
+
+@{
+    ViewBag.Title = "rsvpForm";
+}
+
+<div class="text-center">
+    <div class="panel-heading">
+        <h2>RSVP Form...(remember..no drinks then no entry)</h2>
+    </div>
+    @using (Html.BeginForm())
+    {
+        <div class="text-danger">
+            @Html.ValidationSummary()
+        </div>
+
+        <div class="form-group">
+            <label>Your Name: @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })</label>
+            <label>Email: @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })</label>
+            <label>Your Phone: @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })</label>
+            <div class="form-control">
+                <p>
+                    Will you attend? (NO IF YOU ARE NOT BRINGING A DRINK!!!!!) <br /> <br />
+                    @Html.DropDownListFor(x => x.WillAttend, new[]
+                                {
+                                new SelectListItem(){
+
+                                    Text = "Yes, I'll be there, WITH A DRINK",
+                                    Value = bool.TrueString
+                                },
+                                new SelectListItem(){
+
+                                    Text = "No, I'll not be there, because I'm too cheap to bring a drink",
+                                    Value = bool.FalseString
+                                } },
+                                "Choose an option", new { @class = "text-center" })
+
+                </p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <input class="btn btn-success" type="submit" value="Submit RSVP" />
+        </div>
+    }
+
+    </div>
+
